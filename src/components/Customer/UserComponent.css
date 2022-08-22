@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 200%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.invoice {
+  font-size: x-small;
+  width: 585px;
+  padding: 20px;
+}
+
+.invoice > * {
+  line-height: 2px;
+}
+
+.invoice-head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.invoice-credentials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} */
+
+.invoice-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 125px;
+  padding: 0.5rem;
+}
+
+.invoice-box-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.invoice-box-row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.invoice-box-row > p {
+  margin-bottom: 0;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.export-button {
+  position: absolute;
+  right: 0;
+  background: black;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 2.5rem;
+}
+
+.text-sm {
+  font-size: small;
+}
+.text-xs {
+  font-size: x-small;
+}
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}
+.mb-8 {
+  margin-bottom: 4rem;
+}
+.mr-8 {
+  margin-right: 4rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.text-end {
+  text-align: end;
+}
+.text-center {
+  text-align: center;
+}
+.text-blue {
+  color: #4169e1;
+}
+.w-full {
+  width: 100% !important;
+}
+
+.invoice-head {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.invoice-col-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.invoice-row-container {
+  display: flex;
+  align-items: center;
+}
+
+.invoice-line {
+  display: block;
+  height: 1px;
+  width: 1rem;
+  background: black;
+}
+
+.invoice-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.invoice-box {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  border: 2px black solid;
+  padding: 2px;
+}
+
+.divider-bottom {
+  border-bottom: 2px solid black;
+  margin-bottom: 0.25rem;
+}
+.divider-top {
+  border-top: 2px solid black;
+}
+
+.destination {
+  width: 8.25rem;
+}
+
+.invoice-pricing-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.invoice-pricing {
+  width: 50%;
+}

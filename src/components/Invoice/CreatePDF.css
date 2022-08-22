@@ -1,0 +1,120 @@
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.export-button {
+  position: absolute;
+  right: 0;
+  background: black;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 2.5rem;
+}
+
+.text-sm {
+  font-size: small;
+}
+.text-xs {
+  font-size: x-small;
+}
+p{
+  margin-bottom: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}
+.mb-8 {
+  margin-bottom: 4rem;
+}
+.mr-8 {
+  margin-right: 4rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.text-end {
+  text-align: end;
+}
+.text-center {
+  text-align: center;
+}
+.text-blue {
+  color: #4169e1;
+}
+.w-full {
+  width: 100% !important;
+}
+
+.invoice-head {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.invoice-col-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.invoice-row-container {
+  display: flex;
+  align-items: center;
+}
+
+.invoice-line {
+  display: block;
+  height: 1px;
+  width: 1rem;
+  background: black;
+}
+
+.invoice-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.invoice-box {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  border: 2px black solid;
+  padding: 2px;
+}
+
+.divider-bottom {
+  border-bottom: 2px solid black;
+  margin-bottom: 0.25rem;
+}
+.divider-top {
+  border-top: 2px solid black;
+}
+
+.destination {
+  width: 8.25rem;
+}
+
+.invoice-pricing-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.invoice-pricing {
+  width: 50%;
+}
+
